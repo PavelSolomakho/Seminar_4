@@ -105,14 +105,14 @@ k1 = int(input("Введите натуральную степень для пе
 k2 = int(input("Введите натуральную степень для второго файла k = "))
 koef1 = create_mn(k1)
 koef2 = create_mn(k2)
-write_file("file41_1.txt", create_str(koef1))
-write_file("file41_2.txt", create_str(koef2))
+write_file("file41_A.txt", create_str(koef1))
+write_file("file41_B.txt", create_str(koef2))
 
 # нахождение суммы многочлена
 
-with open('file41_1.txt', 'r') as data:
+with open('file41_A.txt', 'r') as data:
     st1 = data.readlines()
-with open('file41_2.txt', 'r') as data:
+with open('file41_B.txt', 'r') as data:
     st2 = data.readlines()
 print(f"Первый многочлен {st1}")
 print(f"Второй многочлен {st2}")
